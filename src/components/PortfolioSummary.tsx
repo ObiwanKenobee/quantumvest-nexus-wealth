@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { AreaChart } from '@/components/ui/chart';
+import { AreaChart } from '@/components/ui/area-chart';
 
 const chartData = [
   { day: 'Mon', value: 10800 },
