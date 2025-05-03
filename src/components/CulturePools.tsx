@@ -94,7 +94,7 @@ const PoolCard = ({ pool }: { pool: any }) => {
             </div>
           </div>
         </div>
-        <Button size="sm" variant="secondary" className="text-xs">
+        <Button size="sm" variant="secondary">
           Join Pool
         </Button>
       </div>
@@ -105,11 +105,13 @@ const PoolCard = ({ pool }: { pool: any }) => {
 const Button = ({ 
   children, 
   size = "default", 
-  variant = "default" 
+  variant = "default",
+  className = ""
 }: { 
   children: React.ReactNode;
   size?: "default" | "sm";
   variant?: "default" | "secondary";
+  className?: string;
 }) => {
   return (
     <button 
@@ -121,6 +123,7 @@ const Button = ({
             : "bg-gray-100 hover:bg-gray-200 text-gray-800"
         }
         rounded-md font-medium transition-colors
+        ${className}
       `}
     >
       {children}
